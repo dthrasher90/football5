@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Press Start 2P", cursive;
+    background: black;
+    color: ghostwhite;
+    min-height: 100vh;
+    height: 100vh;
+    overflow: auto;
+    box-sizing: border-box;
+
+}
+
+
+
+.wrapper{
+  height: 100vh;
+  min-height: 100vh;
+  widows: 100%;
+  margin: 0 auto;
+  clear: both;
+  overflow: hidden;
+  box-sizing: border-box;
+
+
+}
+.cardContainer {
+    background: url(stadium4.jpg);
+    background-size: 100%;
+    height:100vh;
+    width: 100%;
+    overflow: auto;
+   
+  }
+
+.innerContainer{
+  height: 100vh;
+  width: 55%;
+  border: 5px solid pink;
+  overflow: auto;
+  float: left;
+
+
+}
+
+
+
+.startBtn{
+    float: right;
+
+}
+
+
+
+
+
+.selected{
+  height: 100vh;
+  width: 40%;
+  border: 3px solid lime;
+  float: right;
+}
+
+.playerCard {
+
+    background: linear-gradient(15deg, silver 0%, silver 30%, darkgreen 100%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: black;
+    clear: both;
+    
+
+    box-sizing: border-box;
+    display: inline-grid;
+    margin-top: 15px;
+    margin-left: 15px;
+
+
+
+    height: 240px;
+    width: 260px;
+
+    background-color: #464b4d;
+    border:3px solid orange;
+    perspective: 1000px;
+    border-radius: 15px;
+    box-sizing: border-box;
+  
+ 
+
+}
+.bottom{
+  position: absolute;
+    height: 30px;
+    width: 248px;
+    background-color: silver;
+    margin-top: 190px;
+
+    margin: 0,0, 180,  auto;
+    top: 180;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: lightcyan;
+    text-shadow: 2px 1px  black;
+    border-radius: 15px;
+    border: 3px solid red;
+
+}
+
+.inner{
+
+  position: absolute;
+  clear: both;
+  box-sizing: border-box;
+  height: 100px;
+  width: 200px;
+  transform: translateZ(40px);
+ 
+  top: 10px;
+  left: 20px;
+
+}
+
+
+.innerBack{
+  position: absolute;
+  box-sizing: border-box;
+  font-style: 16px;
+  font-weight: bolder;
+  top: 50px;
+  left: 0px;
+}
+.cardHeader {
+    height: 40px;
+    width:260px;
+    border: 3px solid steelblue;
+
+}
+.playerInfo{
+  position: absolute;
+ 
+  background-color: steelblue;
+  top: 0;
+  width: 180px;
+  height: 50px;
+  color: black;
+  border:3px solid yellow;
+  margin: 0 auto;
+/*  margin-top: 50px;*/
+  
+  
+}
+
+.playerStats {
+    height: 140px;
+    width: 180px;
+    margin-top: 40px;
+    background-color: salmon;
+
+
+}
+
+.currentContainer {
+    margin-top: 50px;
+    margin-left: 0px;
+    height: 500px;
+    width: 80%;
+}
+
