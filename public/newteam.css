@@ -1,15 +1,17 @@
 body{
     background-color: black;
      font-family: "Press Start 2P", cursive;
- 
+ margin: 0;
   color: ghostwhite;
 }
 
 .wrapper{
 
-	margin-top: 100px;
-	margin-left: 100px;
+	height: 100vh;
+	margin: 0 auto;
+	overflow: auto;
 }
+
 
 h1{
 	font-size: 100px;
