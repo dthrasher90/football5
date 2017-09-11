@@ -4,7 +4,7 @@
 
 body {
 
-    font-family: "Press Start 2P", cursive;
+    font-family: "Press Start 2P", sans-serif;
     background: black;
     color: ghostwhite;
     min-height: 100vh;
@@ -12,8 +12,6 @@ body {
     overflow: auto;
     box-sizing: border-box;
 }
-
-
 
 .wrapper {
     height: 100vh;
@@ -34,14 +32,12 @@ body {
 }
 
 
-
 .innerContainer {
     height: 100vh;
     width: 55%;
     overflow: auto;
     float: left;
 }
-
 
 
 .startBtn {
@@ -115,20 +111,25 @@ body {
     margin: 0 auto;
     clear: both;
     overflow: hidden;
+    font-size: 18px;
 }
 
 .playerName {
     color: ghostwhite;
+    font-family: 'Exo 2', sans-serif;
+
 }
 
 
 .playerStats {
     height: 100px;
     width: 200px;
-    border: 5px solid yellow;
     margin-top: 20px;
     clear: both;
     overflow: hidden;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+
 }
 
 

@@ -24,9 +24,8 @@
     <script src="src/assets/scripts/applicationLogic.js"></script>
     <script src="src/assets/scripts/rushingLogScripts.js"></script>
     <script src="src/assets/scripts/passLog.js"></script>
-
     <script src="https://use.fontawesome.com/ffafbe8b8e.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Exo+2" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" href="playerSelect.css">
 </head>
@@ -34,90 +33,79 @@
 <body ng-controller="startCtrl">
     <div class="wrapper">
         <div class="cardContainer">
-       
             <div class="innerContainer">
-               <h2>Available </h2>
+                <h2>Available </h2>
                 <div class="playerCard" ng-repeat="player in players ">
                     <div class="inner">
-                     
                         <div class="front">
                             <div class="playerInfo">
                                 <div class="playerInfo">
-                                    <div class="playerName">   
-                                {{player.position}} </br>
-                               {{player.last}}, {{ player.first}} </br>
-                                College: {{player.college}}
+                                    <div class="playerName">
+                                        {{player.position}} </br>
+                                        {{player.last}}, {{ player.first}} </br>
+                                        College: {{player.college}}
                                     </div>
-                                   <div class="playerStats">
-
-                                    <div class="statsLeft">
-                                str: {{player.Str}} </br>
-                                con: {{player.Con}} </br>
-                                dex: {{player.Dex}} </br>
+                                    <div class="playerStats">
+                                        <div class="statsLeft">
+                                            str: {{player.Str}} </br>
+                                            con: {{player.Con}} </br>
+                                            dex: {{player.Dex}} </br>
+                                        </div>
+                                        <div class="statsRight">
+                                            int: {{player.Int}} </br>
+                                            wis: {{player.Wis}} </br>
+                                            cha: {{player.Cha}} </br>
+                                        </div>
                                     </div>
-                                    <div class="statsRight">
-                                int: {{player.Int}} </br>
-                                wis: {{player.Wis}} </br>
-                                cha: {{player.Cha}} </br>
-                                    </div>
-
                                 </div>
                             </div>
-                          </div>
-                     <!--        <div class="playerStats">
+                            <!--        <div class="playerStats">
                             
                             </div>
                         </div> -->
+                        </div>
+                        <button class="bottom" ng-click="button1()"> SELECT </button>
                     </div>
-                    <button class="bottom" ng-click="button1()"> SELECT </button>
-                </div>
-       <!--          <div class="title.home clearfix">
+                    <!--          <div class="title.home clearfix">
                     <a type="button" class=" startBtn" href="#!teamhome">Start</a>
                     <button ng-click="save()">Save</button>
                 </div> -->
                 </div>
             </div>
             <div class="selected">
-              <h2>Current</h2>
+                <h2>Current</h2>
                 <div class="playerCard" ng-repeat="player in newteam">
                     <div class="inner">
-                     
                         <div class="front">
                             <div class="playerInfo">
                                 <div class="playerInfo">
-                                    <div class="playerName">   
-                                {{player.position}} </br>
-                               {{player.last}}, {{ player.first}} </br>
-                                College: {{player.college}}
+                                    <div class="playerName">
+                                        {{player.position}} </br>
+                                        {{player.last}}, {{ player.first}} </br>
+                                        College: {{player.college}}
                                     </div>
-
                                     <div class="playerStats">
-
-                                    <div class="statsLeft">
-                                Str: {{player.Str}} </br>
-                                Con: {{player.Con}} </br>
-                                Dex: {{player.Dex}} </br>
-                                    </div>
-                                    <div class="statsRight">
-                                
-                                Int: {{player.Int}} </br>
-                                Wis: {{player.Wis}} </br>
-                                Cha: {{player.Cha}} </br>
-
-                                    </div>
-
+                                        <div class="statsLeft">
+                                            Str: {{player.Str}} </br>
+                                            Con: {{player.Con}} </br>
+                                            Dex: {{player.Dex}} </br>
+                                        </div>
+                                        <div class="statsRight">
+                                            Int: {{player.Int}} </br>
+                                            Wis: {{player.Wis}} </br>
+                                            Cha: {{player.Cha}} </br>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <button class="bottom" ng-click="remove()"> REMOVE </button>
-                     <!--        <div class="playerStats">
+                            <!--        <div class="playerStats">
                             
                             </div>
                         </div> -->
+                        </div>
                     </div>
-                  
-                </div>
-                   <!--  <button class="bottom" ng-click="button1()"> SELECT </button> -->
+                    <!--  <button class="bottom" ng-click="button1()"> SELECT </button> -->
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title>MEAN FOOTBALL</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
@@ -24,19 +24,47 @@
 </head>
 
 <body ng-controller="startCtrl">
-  
-<div class="title.container">
-    <h2>Team Home </h2>
-    <a class="btn btn-success startGame" href="/gamescreen.html">Start Game!!!</a>
-    <button class= "btn btn-primary" ng-click="load()">Load</button>
-    <button class= "btn btn-primary" ng-click="save()">Save</button>
-</div>
-
-
-  <div class="container teamHome">
-        <div class="row">
-         <div class="wrapper" >
-            <table class="table table-inverse">
+    <div class="title.container">
+        <h2>Team Home </h2>
+        <a class="btn btn-success startGame" href="/gamescreen.html">Start Game!!!</a>
+        <button class="btn btn-primary" ng-click="load()">Load</button>
+        <button class="btn btn-primary" ng-click="save()">Save</button>
+    </div>
+    <div class="wrapper">
+        <div class="myTeam" ng-repeat="player in yo">
+            <div class="inner">
+                <div class="front">
+                    <div class="playerInfo">
+                        <div class="playerInfo">
+                            <div class="playerName">
+                                {{player.position}} </br>
+                                {{player.last}}, {{ player.first}} </br>
+                                College: {{player.college}}
+                            </div>
+                            <div class="playerStats">
+                                <div class="statsLeft">
+                                    str: {{player.Str}} </br>
+                                    con: {{player.Con}} </br>
+                                    dex: {{player.Dex}} </br>
+                                </div>
+                                <div class="statsRight">
+                                    int: {{player.Int}} </br>
+                                    wis: {{player.Wis}} </br>
+                                    cha: {{player.Cha}} </br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--        <div class="playerStats">
+                            
+                            </div>
+                        </div> -->
+                </div>
+                <button class="bottom" ng-click="button1()"> SELECT </button>
+            </div>
+        </div>
+    </div>
+    <!-- <table class="table table-inverse">
                 <thead>
                 <th>Pos</th>
                     <th>First</th>
@@ -70,10 +98,8 @@
                     </tr>
                 </tbody>
             </table>
-       
-   
- 
-    <div class="container">
+        -->
+    <!-- <div class="container">
         <div class="row">
             <div class="homeContainer">
             <div class="teamCard  d-flex flex-row" ng-repeat="player in yo">
@@ -83,18 +109,14 @@
                     </section>
                     <section class="playerInfo">
                         <h6>{{player.last}}, {{player.first}}</h6>
-                      
-<!--                         <p>college: {{player.college}} </p> -->
+  
                     </section>
-               <!--      <button class="btn btn-primary btn-sm dropBtn" ng-click="button1()">Drop</button>
-                </div> -->'
+
                 </div>
             </div>
         </div>
     </div>
-   </div>
- </div>
- </div>
+   </div> -->
 </body>
 
 </html>
