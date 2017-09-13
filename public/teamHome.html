@@ -32,37 +32,35 @@
     </div>
     <div class="wrapper">
         <div class="myTeam" ng-repeat="player in yo">
-            <div class="inner">
-                <div class="front">
+            <div class="front">
+                <div class="playerCard">
                     <div class="playerInfo">
-                        <div class="playerInfo">
-                            <div class="playerName">
-                                {{player.position}} </br>
-                                {{player.last}}, {{ player.first}} </br>
-                                College: {{player.college}}
+                        <div class="playerName">
+                            {{player.position}} </br>
+                            {{player.last}}, {{ player.first}} </br>
+                            College: {{player.college}}
+                        </div>
+                        <div class="playerStats">
+                            <div class="statsLeft">
+                                Str: {{player.Str}} </br>
+                                Con: {{player.Con}} </br>
+                                Dex: {{player.Dex}} </br>
                             </div>
-                            <div class="playerStats">
-                                <div class="statsLeft">
-                                    str: {{player.Str}} </br>
-                                    con: {{player.Con}} </br>
-                                    dex: {{player.Dex}} </br>
-                                </div>
-                                <div class="statsRight">
-                                    int: {{player.Int}} </br>
-                                    wis: {{player.Wis}} </br>
-                                    cha: {{player.Cha}} </br>
-                                </div>
+                            <div class="statsRight">
+                                Int: {{player.Int}} </br>
+                                Wis: {{player.Wis}} </br>
+                                <CENTER></CENTER>ha: {{player.Cha}} </br>
                             </div>
                         </div>
+
+      
                     </div>
-                    <!--        <div class="playerStats">
-                            
-                            </div>
-                        </div> -->
+                      <button class="bottom" ng-click="button1()"> COACH!!! </button>
                 </div>
-                <button class="bottom" ng-click="button1()"> SELECT </button>
             </div>
         </div>
+    </div>
+    </div>
     </div>
     <!-- <table class="table table-inverse">
                 <thead>

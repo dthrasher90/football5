@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    font-family: "Press Start 2P", cursive;
+    font-family: "Press Start 2P";
     color: ghostwhite;
 }
 *{
@@ -12,57 +12,38 @@ body {
     background-image: url(stadium4.jpg);
     background-size: cover;
     background-size: 100% 100S%;
-    height:700px;
+ 
     width: 100%;
     background-repeat: no-repeat;
     position: relative;
     box-sizing: border-box;
- /*   display: inline-flex;*/
-    clear
+    display: flex;
+    flex-flow: row;
 
 
 }
 
 
 .myTeam{
-    display: inline-grid;
-    height: 400px;
-    width: 800px;
-    overflow: auto;
-}
-
-/*.wrapper {
- 
-    height: 600px;
-    min-height: 100vh;
-    min-width: 100%;
-    box-sizing: border-box;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-right: 0px;
+   
+    height: 70vh;
+    width: 1200px;
+    overflow: hidden;
  
 
-}*/
-
-/*.homeContainer{
-    height: 250px;
-    width: 100%;
-    overflow-x: scroll;
-    display: inline-flex;
-
 }
-*/
 .playerCard {
 
+    flex: 1 1 0;
+    justify-content: flex-start;
     background: linear-gradient(15deg, silver 0%, silver 30%, darkgreen 100%);
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     color: black;
-    clear: both;
-
+ 
 
     box-sizing: border-box;
-    display: inline-grid;
+
     margin-top: 15px;
     margin-left: 15px;
 
@@ -83,26 +64,21 @@ body {
     height: 35px;
     width: 260px;
     background-color: silver;
-    /*    margin-top: 235px;*/
-    margin-left: -20px;
 
-    margin-top: 195px;
-    font-family: 'Open Sans', sans-serif;
+
+    font-family: "Press Start 2P";
+    margin-top: 215px;
+
     font-size: 14px;
     color: lightcyan;
     text-shadow: 2px 1px black;
     border-radius: 15px;
 }
 
-.inner {
 
-    position: absolute;
-    clear: both;
-    box-sizing: border-box;
-    height: 100px;
-    width: 200px;
-    top: 10px;
-    left: 20px;
+.front{
+    position: relative;
+    width: 260px;
 }
 
 .playerInfo {
