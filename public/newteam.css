@@ -9,30 +9,52 @@ body{
 
 	height: 100vh;
 	margin: 0 auto;
-	overflow: auto;
+
+	
 }
 
 
 h1{
 	font-size: 100px;
-	margin: 0 auto;
-	
+	text-align: center;
+	`
 }
 .title{
 	animation-name: mymove;
 	animation-duration: 1.5s;
 	animation-iteration-count: infinite;
 	font-size: 110px;
+	width: 100%;
+/*	width: 100%;*/
+
 
 
 }
 
 p{
-	width: 50%;
-	margin-left: 200px;
-	margin-top: 25px;
+	
+	margin: auto;
+    width: 70%;
+	color: white;
+	line-height: 30px;
+
 
 }
+ a{
+	/*margin-left: 200px;*/
+    display: block;
+    margin: auto;
+    width: 40%;
+	color: white;
+
+	font-size: 28px;
+	font-family: "Press Start 2P";
+	text-decoration: none;
+	
+
+
+}
+
 @keyframes mymove {
     0% {color: red;}
     50% {color: green;}
