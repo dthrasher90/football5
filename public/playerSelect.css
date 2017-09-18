@@ -13,6 +13,34 @@ body {
     box-sizing: border-box;
 }
 
+
+.controls{
+    height:75px;
+    position: relative;
+  
+}
+.controls a {
+
+float: right;
+animation-name: mymove;
+    animation-name: mymove;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
+}
+.selected  .save{
+
+    position: absolute;
+    margin-left: 300px;
+    margin-top: -40px;
+}
+
+@keyframes mymove {
+    0% {color: red;}
+    50% {color: green;}
+    100% {color: yellow;}
+}
+
 .wrapper {
     height: 100vh;
     min-height: 100vh;
@@ -148,4 +176,5 @@ body {
     margin-left: 0px;
     height: 500px;
     width: 80%;
+    position: relative;
 }

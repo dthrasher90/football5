@@ -400,7 +400,7 @@ $scope.save = function(qb){
     myteam = $scope.newteam;
     team1 = JSON.stringify(myteam);
     console.log("myteam", myteam, team1);
-    alert("Team saved");
+    // alert("Team saved");
     $localStorage.myteam = team1;
 
 

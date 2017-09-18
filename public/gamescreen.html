@@ -39,12 +39,12 @@
                     <p class="homeScore">Home:</p>
                     <p id="home"> </p>
                     <p class="gametime"> Time:</p>
-                    <p class="gamequarter"> QTR: 1</p>
+                    <!-- <p class="gamequarter"> QTR: 1</p> -->
                     <p id="counter">15:00</p>
                     <p class="awayScore"> Away: </p>
                     <p id="away"> </p>
                     <p id="currentDownDisplay"> </p>
-                    <p id="yardsRemaining"> </p>
+                    <p id="yardsRemaining">Down:  </p>
                     <!-- <p id= "yardsRemaining">11 </p> -->
                     <div id="gamecanvas"> </div>
                     <div class="gameLogWrapper">
@@ -58,13 +58,7 @@
                             <button type="button" onclick="passPlayRight()" class="btn btn-info">Pass Right</button>
                         </div>
                        
-                            <button type="button" onclick="runPlayLeft()" class="btn btn-info">Run Left</button>
-                     <!--        <button type="button" onclick="runPlayMiddle()" class="btn btn-info">Run Middle</button>
-                            <button type="button" onclick="runPlayRight()" class="btn btn-info">Run Right</button>
-                    -->
-                        <button type="button" ng-click="load()" class="btn btn-info">Coach</button>
-                        </div>  
-
+               
                         <div>
                               <table class="table">
                     
@@ -89,7 +83,7 @@
 
 <script type="text/javascript">
     var oldBallSpot
-    var game = new Phaser.Game(770, 423, Phaser.AUTO, 'gamecanvas');
+    var game = new Phaser.Game(770, 450, Phaser.AUTO, 'gamecanvas');
     game.state.add('GameActionState', GameActionState);
 
     game.state.add('bootState', bootState);

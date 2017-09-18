@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <title>MEAN FOOTBALL</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
- 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
@@ -28,10 +27,13 @@
 </head>
 
 <body ng-controller="startCtrl">
-<a href="#!teamhome">continue</a>
+    <div class="controls">
+        <a class="continute" href="#!teamhome">Continue --> </a>
+
+      
+    </div>
     <div class="wrapper">
         <div class="cardContainer">
-
             <div class="innerContainer">
                 <h2>Available </h2>
                 <div class="playerCard" ng-repeat="player in players ">
@@ -58,21 +60,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--        <div class="playerStats">
-                            
-                            </div>
-                        </div> -->
+                 
                         </div>
                         <button class="bottom" ng-click="button1()"> SELECT </button>
                     </div>
-                    <!--          <div class="title.home clearfix">
-                    <a type="button" class=" startBtn" href="#!teamhome">Start</a>
-                    <button ng-click="save()">Save</button>
-                </div> -->
-                </div>
+                      </div>
             </div>
             <div class="selected">
                 <h2>Current</h2>
+                  <button class="save" ng-click="save()"> Save Team </button>
                 <div class="playerCard" ng-repeat="player in newteam">
                     <div class="inner">
                         <div class="front">
@@ -111,4 +107,8 @@
     </div>
 </body>
 
+<script type="text/javascript">
+    
+    alert("***Note this app is not inteded for smaller view ports***")
+</script>
 </html>
