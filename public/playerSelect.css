@@ -33,6 +33,11 @@ animation-name: mymove;
     position: absolute;
     margin-left: 300px;
     margin-top: -40px;
+    font-family: "Press Start 2P", sans-serif;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    height: 25px;
 }
 
 @keyframes mymove {
