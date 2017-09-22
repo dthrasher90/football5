@@ -1,10 +1,10 @@
 body {
     font-family: "Press Start 2P", sans-serif;
-    background: white;
+    background: black;
     color: whitesmoke;
     overflow: hidden;
-    display: inline-flex;
-    min-height: 100vh;
+   /* display: inline-flex;*/
+   
     overflow: scroll;
 }
 
@@ -76,7 +76,7 @@ td, tr{
 
 .awayScore {
     position: absolute;
-    margin-top: 40px;
+    margin-top: 30px;
     height: 30px;
     width: 110px;
 /*    border: 3px solid gold;
@@ -87,7 +87,7 @@ td, tr{
     height: 30px;
     width: 70px;
     margin-left: 120px;
-    margin-top: 40px;
+    margin-top: 30px;
    /* border: 5px solid purple;
 */}
 
@@ -148,9 +148,9 @@ h3 {
 #currentDownDisplay {
 
     position: absolute;
-    font-size: 24px;
+    font-size: 18px;
     margin-left: 600px;
-    margin-top: 40px;
+    margin-top: 20px;
     height: 40px;
     width: 100px;
 /*    border: 5px solid lightseagreen;*/
@@ -159,9 +159,9 @@ h3 {
 
 #yardsRemaining {
     position: absolute;
-    font-size: 24px;
-    margin-left: 700px;
-    margin-top: 40px;
+    font-size: 18px;
+    margin-left: 500px;
+    margin-top: 20px;
     height: 40px;
     width: 50px;
 /*    border: 5px solid green;*/
